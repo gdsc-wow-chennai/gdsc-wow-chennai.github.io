@@ -8,12 +8,6 @@ on:
 
 jobs:
   Build:
-    permissions:
-      pages: write # to deploy to Pages
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -26,6 +20,17 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           path: ./public
+
+  Deploy:
+    needs: Build
+    permissions:
+      pages: write      # to deploy to Pages
+      id-token: write   # to verify the deployment originates from an appropriate source
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
