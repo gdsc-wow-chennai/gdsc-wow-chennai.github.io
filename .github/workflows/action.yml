@@ -10,6 +10,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: "Install depdencies"
+        run: "npm i"
       - name: "Build website"
         run: "npm gatsby build"
       - name: Checkout
