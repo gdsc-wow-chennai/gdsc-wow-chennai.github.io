@@ -2,8 +2,9 @@ import type { GatsbyConfig } from "gatsby";
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: `gdsc-wow-chennai`,
-    siteUrl: `https://www.yourdomain.tld`,
+    title: `gdsc-wow-chennai-2023`,
+    description:"India's premier student networking event bringing the brightest future talent together",
+    siteUrl: `https://gdscwowchennai.github.io/`,
   },
   graphqlTypegen: true,
   plugins: [
@@ -13,7 +14,7 @@ const config: GatsbyConfig = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        icon: "src/images/icon.png",
+        icon: "./src/images/icon.png",
       },
     },
     "gatsby-plugin-mdx",

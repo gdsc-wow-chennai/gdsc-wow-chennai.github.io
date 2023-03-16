@@ -21,6 +21,10 @@ const SEO = (props: ISEOProps): JSX.Element => {
         name="keywords"
         content="Student Networking, GoogleStudents, CampusConnect"
       />
+      <meta
+        name="description"
+        content="India's premier student networking event bringing the brightest future talent together"
+      />
       <meta name="robots" content="index, follow" />
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
       <meta name="language" content="English" />
