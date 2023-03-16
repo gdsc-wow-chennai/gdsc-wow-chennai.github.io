@@ -10,12 +10,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v2
       - name: "Install depdencies"
         run: "npm i"
       - name: "Build website"
         run: "npm gatsby build"
-      - name: Checkout
-        uses: actions/checkout@v2
       - name: "Upload"
         uses: actions/upload-pages-artifact@v1
         with:
