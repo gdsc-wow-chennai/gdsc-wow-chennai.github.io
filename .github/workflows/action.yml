@@ -15,7 +15,7 @@ jobs:
       - name: "Install depdencies"
         run: "npm i"
       - name: "Build website"
-        run: "npm gatsby build"
+        run: "npm run build"
       - name: "Upload"
         uses: actions/upload-pages-artifact@v1
         with:
