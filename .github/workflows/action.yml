@@ -1,0 +1,23 @@
+name: "Build Website"
+
+on:
+  push:
+    branches:
+      - dev
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Build website"
+        run: "npm gatsby build"
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: "Upload"
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: ./build
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
