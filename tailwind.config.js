@@ -1,8 +1,7 @@
 module.exports = {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./src/components/**/*.{js,ts,jsx,tsx}",
-    "./src/elements/**/*.{js,ts,jsx,tsx}",
+    "./src/pages/**/*.{js,jsx,ts,tsx}",
+    "./src/components/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
     screens: {
@@ -13,6 +12,7 @@ module.exports = {
     extend: {
       fontFamily: {
         roboto: ["Roboto", "sans-serif"],
+        portamento: ["Changa"],
       },
       transitionDuration: "250ms",
       colors: {

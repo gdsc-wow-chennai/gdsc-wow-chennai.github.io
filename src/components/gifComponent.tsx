@@ -1,16 +1,11 @@
 import React from "react";
-import { StaticImage } from "gatsby-plugin-image";
+import image from "../images/image.svg";
 
 const GifComponent = (): JSX.Element => {
   return (
     <>
-      <section className="flex flex-auto w-full font-roboto">
-        <StaticImage
-          width={48}
-          src={"../images/image.svg"}
-          alt="SVG of an image"
-          layout="fixed"
-        />
+      <section className="flex items-center justify-between h-full w-full font-roboto">
+        <img src={image} alt="SVG of an image"/>
       </section>
     </>
   );

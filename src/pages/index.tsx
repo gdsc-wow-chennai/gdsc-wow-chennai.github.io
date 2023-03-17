@@ -1,13 +1,24 @@
 import React from "react";
-import { SEO } from "../components/seo";
+import HeroComponent from "./../components/hero";
+import { SEO } from "./../components/seo";
+import SideBar from "./../components/sidebar";
+import GifComponent from "./../components/gifComponent";
 import "../styles/global.css";
 
 const Home = (): JSX.Element => {
   return (
     <>
-      <SEO name="GDSC WoW Chennai 2023" icon="../images/favicon.png" />
-      <section className="font-roboto text-red-500 text-6xl">
-        Coming Soon
+      <SEO name="GDSC WoW Chennai 2023" icon="./images/icon.png" />
+      <section className="min-h-screen grid grid-cols-11">
+        <section className="col-start-1 col-span-1">
+          <SideBar />
+        </section>
+        <section className="col-start-2 col-span-5 flex flex-col justify-center">
+          <HeroComponent />
+        </section>
+        <section className="col-start-7 col-span-5">
+          <GifComponent />
+        </section>
       </section>
     </>
   );

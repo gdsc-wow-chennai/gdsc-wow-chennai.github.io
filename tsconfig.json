@@ -106,6 +106,5 @@
     "**/*.ts",
     "**/*.tsx",
     "pages/404.tsx",
-    "gatsby-browser.js"
   ]
 }
