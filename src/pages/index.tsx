@@ -26,5 +26,27 @@ const Home = (): JSX.Element => {
 export default Home;
 
 export const Head = () => {
-  <SEO name="GDSC WoW Chennai 2023" icon="./images/icon.png" />;
+  <>
+    <title>GDSC WoW Chennai 2023</title>
+    <meta name="title" content="GDSC WoW Chennai 2023" />
+    <meta
+      name="description"
+      content="India's premier student networking event bringing the brightest future talent together."
+    />
+    <meta
+      name="keywords"
+      content="Student Networking, Google Students, GDSC"
+    />
+    <meta
+      name="description"
+      content="India's premier student networking event bringing the brightest future talent together"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="language" content="English" />
+    <meta name="revisit-after" content="1 days" />
+    <meta name="author" content="GoogleStudentDevelopersChennai" />
+    <link rel="icon" href={"./images/icon.png"} />
+    <meta property="og:image" content={"./images/icon.png"} />
+  </>;
 };
