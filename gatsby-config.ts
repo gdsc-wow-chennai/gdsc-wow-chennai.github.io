@@ -3,9 +3,10 @@ import type { GatsbyConfig } from "gatsby";
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `gdsc-wow-chennai-2023`,
+    icon: "./src/images/iconism.png",
     description:
       "India's premier student networking event bringing the brightest future talent together",
-    siteUrl: `https://gdscwowchennai.github.io/`,
+    siteUrl: `https://gdsc-wow-chennai.github.io/`,
   },
   graphqlTypegen: true,
   plugins: [
