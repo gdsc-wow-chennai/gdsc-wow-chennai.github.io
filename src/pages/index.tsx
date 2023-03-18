@@ -8,7 +8,6 @@ import "../styles/global.css";
 const Home = (): JSX.Element => {
   return (
     <>
-      <SEO name="GDSC WoW Chennai 2023" icon="./images/icon.png" />
       <section className="min-h-screen grid grid-cols-11">
         <section className="col-start-1 col-span-1">
           <SideBar />
@@ -25,3 +24,7 @@ const Home = (): JSX.Element => {
 };
 
 export default Home;
+
+export const Head = () => {
+  <SEO name="GDSC WoW Chennai 2023" icon="./images/icon.png" />;
+};
